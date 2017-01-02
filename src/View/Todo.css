@@ -1,0 +1,12 @@
+
+.todo-header{
+  background-color: #222;
+  height: 44px;
+  padding: 20px;
+  color: white;
+}
+
+.todo-header-title{
+
+  align-items: center;
+}
