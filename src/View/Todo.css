@@ -6,7 +6,61 @@
   color: white;
 }
 
-.todo-header-title{
+
+.todo-top{
+
+  height: 44px;
+
+  width: 60%;
+
+  margin: 0 auto;
+
+  line-height: 44px;
+
+  display: flex;
 
   align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: 20px;
+
 }
+
+.todo-top-button{
+
+    background-color:#222 ;
+
+    color: white;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    height: 44px;
+
+    width: 88px;
+
+}
+.todo-top-leftItem{
+
+
+}
+
+.todo-left{
+  /*float: left;*/
+
+}
+
+.todo-top-input{
+
+    width: 80%;
+    outline: none;
+    height: 100%;
+    font-size: larger;
+}
+
+
+
