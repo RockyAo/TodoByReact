@@ -2,6 +2,15 @@ import React,{Component} from 'react';
 
 export default class TodoItem extends Component {
 
+    static  defaultProps(){
+
+        return{
+
+            title:"",
+            completed:false,
+        }
+    }
+
     constructor(props) {
         super(props);
 
