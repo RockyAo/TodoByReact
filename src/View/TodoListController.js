@@ -1,29 +1,37 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import TodoList from './TodoList';
+import TodoAction from '../Action/TodoAction';
 
 class Class extends Component {
 
-    constructor(props){
-        super(props);
-        this.state = {};
-    }
-
     render() {
+
+        const {
+            todos,
+            toggleItem,
+            removeItem,
+            editItem
+        } = this.props;
+
         return (
-            <div className="class-name">
-                content
-            </div>
+
+            <TodoList
+                todos={todos}
+                toggleItemList={toggleItem}
+                removeItemList={removeItem}
+                editItemList={editItem}
+            />
         );
     }
 }
 
-function mapStateToProps({}){
-    return {};
-}
 
-function mapDispatchToProps(dispatch){
-    return bindActionCreators({},dispatch);
-}
-
-export default connect (mapStateToProps,mapDispatchToProps)(Class);
+export default connect (
+    (state) => ({todos: state.todo}),
+    {
+        toggleItem: TodoAction.toggleItem,
+        removeItem: TodoAction.removeItem,
+        editItem: TodoAction.editItem
+    }
+)(Class);

@@ -64,16 +64,6 @@
     width: 88px;
 
 }
-.todo-top-leftItem{
-
-
-}
-
-.todo-left{
-  /*float: left;*/
-
-}
-
 
 
 .todo-input-finish{
@@ -99,6 +89,7 @@
 
     width: 25px;
     height: 25px;
+    outline: none;
 }
 
 .todo-item{
@@ -109,7 +100,7 @@
     justify-content: space-between;
     border-bottom-style: groove;
     border-bottom-width: 0.5px;
-
+    height: 44px;
 
 }
 .todo-item-line{
@@ -117,4 +108,10 @@
     width: 100%;
     /*padding-left: 25px;*/
     padding-right: 45px;
+}
+
+.todo-item-input{
+
+    flex: 1;
+    height: 100%;
 }
