@@ -1,22 +1,3 @@
 [
-  {
-    "id": 100,
-    "title": "item 1",
-    "completed": false
-  },
-  {
-    "id": 101,
-    "title": "item 2",
-    "completed": true
-  },
-  {
-    "id": 102,
-    "title": "item 3",
-    "completed": false
-  },
-  {
-    "id": 103,
-    "title": "item 4",
-    "completed": false
-  }
+  
 ]
