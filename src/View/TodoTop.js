@@ -60,8 +60,7 @@ export default class TodoTop extends Component{
     }
 
     closeModal(){
-        this.setState({showInput:false});
 
-        console.log(this.state.showInput);
+        this.setState({showInput:false});
     }
 }
