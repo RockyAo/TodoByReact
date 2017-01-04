@@ -6,4 +6,4 @@ const TodoConstants = {
     EDIT_ITEM: "EDIT_ITEM",
 }
 
-export default {...TodoConstants};
+export default TodoConstants;
