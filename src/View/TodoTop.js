@@ -43,7 +43,7 @@ export default class TodoTop extends Component{
                            autoFocus={true}
                            onKeyDown={(event)=>this.inputFinish(event)}
                     />
-                    <button onClick={()=>this.closeModal()}>确定</button>
+                    {/*<button onClick={()=>this.closeModal()}>确定</button>*/}
                 </ReactModal>
             </div>
         )
@@ -54,7 +54,6 @@ export default class TodoTop extends Component{
         let keyCode = event.keyCode;
         if (keyCode === 13) {
             let title = event.target.value;
-            console.log(title+'.....'+keyCode);
             event.target.value = "";
             this.closeModal();
         }
@@ -62,5 +61,7 @@ export default class TodoTop extends Component{
 
     closeModal(){
         this.setState({showInput:false});
+
+        console.log(this.state.showInput);
     }
 }

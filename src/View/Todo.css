@@ -56,11 +56,40 @@
 
 .todo-top-input{
 
-    width: 80%;
+    width: 100%;
     outline: none;
     height: 100%;
     font-size: larger;
 }
 
+.todo-list{
+
+    width: 65%;
+    height: 100%;
+    display: flex;
+    margin:0 auto;
+}
+
+.todo-item-selectedImage{
+
+    width: 25px;
+    height: 25px;
+}
+
+.todo-item{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: groove;
+    border-bottom-width: 0.5px;
 
 
+}
+.todo-item-line{
+
+    width: 100%;
+    /*padding-left: 25px;*/
+    padding-right: 45px;
+}
