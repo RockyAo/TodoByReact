@@ -5,7 +5,7 @@ const TodoAction = {
     loadData() {
 
         return (dispatch) => {
-            fetch('todos.json')
+            fetch('todo.json')
                 .then((responseData) => responseData.json())
                 .then((todos) => {
                     dispatch({

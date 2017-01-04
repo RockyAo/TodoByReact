@@ -1,29 +1,26 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import TodoTop from './TodoTop';
 
-class Class extends Component {
 
-    constructor(props){
-        super(props);
-        this.state = {};
-    }
+class TodoTopController extends Component {
 
     render() {
+
+        const {
+            todos
+        } = this.props;
+
+        let todoCount = todos.filter((todo)=> !todo.completed).length;
+
         return (
-            <div className="class-name">
-                content
-            </div>
+           <TodoTop todoCount={todoCount}/>
         );
     }
 }
 
-function mapStateToProps({}){
-    return {};
-}
+export default connect (
 
-function mapDispatchToProps(dispatch){
-    return bindActionCreators({},dispatch);
-}
+    (state) => ({todos: state.todo})
 
-export default connect (mapStateToProps,mapDispatchToProps)(Class);
+)(TodoTopController);

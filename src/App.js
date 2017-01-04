@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import TodoTop from './View/TodoTop';
 import TodoList from './View/TodoList';
 import { connect } from 'react-redux';
 import TodoAction from './Action/TodoAction';
 import TodoHeaderController from './View/TodoHeaderController';
+import TodoTopController from './View/TodoTopController';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
           <TodoHeaderController />
-          <TodoTop />
+          <TodoTopController />
           <TodoList />
       </div>
     );
