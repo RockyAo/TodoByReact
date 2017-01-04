@@ -4,8 +4,28 @@
   height: 44px;
   padding: 20px;
   color: white;
+  display: flex;
+
 }
 
+.todo-header-title{
+
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.todo-header-input{
+
+    outline: none;
+    height: 35px;
+    font-size: larger;
+    margin-left: 20px;
+    border-radius: 10px;
+    flex: 1;
+    margin-top: 15px;
+
+}
 
 .todo-top{
 
@@ -54,12 +74,17 @@
 
 }
 
-.todo-top-input{
 
-    width: 100%;
+
+.todo-input-finish{
+
+    height: 80%;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 90px;
+    background-color: #222;
+    color: white;
     outline: none;
-    height: 100%;
-    font-size: larger;
 }
 
 .todo-list{
