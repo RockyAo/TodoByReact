@@ -1,4 +1,4 @@
-import Constant from '../Constants/Constans';
+import Constant from '../Constants/Constants';
 
 const TodoAction = {
 
