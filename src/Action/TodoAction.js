@@ -3,6 +3,7 @@ import Constant from '../Constants/Constants';
 const TodoAction = {
 
     loadData() {
+
         return (dispatch) => {
             fetch('todos.json')
                 .then((responseData) => responseData.json())
